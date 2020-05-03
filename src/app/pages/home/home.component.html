@@ -1,0 +1,13 @@
+<div class = "content">
+
+    <h2 [style.color]="checked ? 'red' : 'white'">{{ title }} {{ name?.value }}</h2>
+    <mat-form-field style="width: 40%">
+        <mat-label>Seu nome</mat-label>
+        <input #name matInput placeholder="Ex. Samuel">
+      </mat-form-field>
+
+      
+        <mat-slide-toggle (change)="checked = !checked">Red?</mat-slide-toggle>
+      
+</div>
+
